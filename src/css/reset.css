@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-decoration: none;
+}
+
+.navbar-links a {
+    text-decoration: none; 
+    color: var(--foreground-color);
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    text-decoration: none;     
+    color: var(--foreground-color); 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+

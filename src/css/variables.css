@@ -1,0 +1,27 @@
+:root {
+  /*Spacing*/
+  --spacing-xsmall: 0.5rem;
+  --spacing-small: 1rem;
+  --spacing-smedium: 1.5rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 4rem;
+
+  /*Font Size*/
+  --font-size-phone: 12px;
+  --font-size-xsmall: 16px;
+  --font-size-small: 18px;
+  --font-size-medium: 24px;
+  --font-size-plussize: 32px;
+  --font-size-mediumlarge: 40px;
+  --font-size-large: 48px;
+  --font-size-xlarge: 56px;
+
+  /*Colors*/
+  --background-color: #008248;
+  --foreground-color: #f3f4f0;
+  --text-color: black;
+
+  /*Fonts*/
+  --primary-font: "peckham-press", "sans-serif";
+  --secondary-font: "futura", "sans-serif";
+}
