@@ -76,5 +76,5 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Links
 
-    - GitHub Repository:
-    - Netlify Deployment:
+    - GitHub Repository: https://github.com/norastige/IndividualAssignment2.git
+    - Netlify Deployment: https://6759a54111aed414bda2fad0--playful-lokum-a663b7.netlify.app
