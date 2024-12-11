@@ -7,14 +7,14 @@
   --spacing-large: 4rem;
 
   /*Font Size*/
-  --font-size-phone: 12px;
-  --font-size-xsmall: 16px;
-  --font-size-small: 18px;
-  --font-size-medium: 24px;
-  --font-size-plussize: 32px;
-  --font-size-mediumlarge: 40px;
-  --font-size-large: 48px;
-  --font-size-xlarge: 56px;
+  --font-size-2xsmall: 0.25rem;
+  --font-size-xsmall: 0.5 rem;
+  --font-size-small: 1rem;
+  --font-size-cards: 1.5rem;
+  --font-size-medium: 2rem;
+  --font-size-large: 3rem;
+  --font-size-xlarge: 4rem;
+  --font-size-2xlarge: 5rem;
 
   /*Colors*/
   --background-color: #008248;
@@ -22,6 +22,6 @@
   --text-color: black;
 
   /*Fonts*/
-  --primary-font: "peckham-press", "sans-serif";
+  --primary-font: "Syne", "sans-serif";
   --secondary-font: "futura", "sans-serif";
 }

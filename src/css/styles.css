@@ -1,13 +1,13 @@
+@font-face {
+  font-family: Syne;
+  src: url(../assets/fonts/Syne.ttf);
+}
+
 body {
-  min-height: 100vh;
-  height: 5350px;
-  font-size: var(--font-size-small);
-  font-weight: 300;
-  font-style: normal;
-  color: var(--text-color);
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: var(--spacing-medium);
+  padding: var(--spacing-medium);
   background-color: var(--background-color);
   font-family: var(--primary-font);
 }
@@ -39,20 +39,17 @@ header {
 .navbar-links {
   display: flex;
   font-family: var(--primary-font);
-  font-size: var(--font-size-xsmall);
-}
-
-.navbar-links li {
-  margin-left: 50px;
-  color: green;
+  font-size: var(--font-size-medium);
 }
 
 /*Footer*/
 footer {
   width: 100%;
+  height: 350px;
   display: flex;
-  justify-content: center;
-  align-items: end;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-large);
 }
 
 .footer-container {
@@ -71,59 +68,15 @@ footer {
 .footer-links {
   display: flex;
   justify-content: right;
-  text-decoration: none;
 }
 
 .footer-links li {
   margin-left: 50px;
-  font-family: var(--primary-font-font);
   color: var(--foreground-color);
-  text-decoration: none;
-  list-style-type: none;
+  font-size: var(--font-size-medium);
 }
 
-.card-1:hover > .card-container_1,
-.card-2:hover > .card-container_2,
-.card-3:hover > .card-container_3,
-.card-4:hover > .card-container_4,
-.card-5:hover > .card-container_5,
-.card-6:hover > .card-container_6,
-.card-7:hover > .card-container_7,
-.card-8:hover > .card-container_8,
-.card-9:hover > .card-container_9,
-.card-10:hover > .card-container_10,
-.card-11:hover > .card-container_11,
-.card-12:hover > .card-container_12,
-.card-13:hover > .card-container_13,
-.card-14:hover > .card-container_14,
-.card-15:hover > .card-container_15,
-.card-16:hover > .card-container_16,
-.card-17:hover > .card-container_17 {
-  pointer-events: none; /* Deactivating hover-effekt on internal elements */
-}
-
-.card-1:hover,
-.card-2:hover,
-.card-3:hover,
-.card-4:hover,
-.card-5:hover,
-.card-6:hover,
-.card-7:hover,
-.card-8:hover,
-.card-9:hover,
-.card-10:hover,
-.card-11:hover,
-.card-12:hover,
-.card-13:hover,
-.card-14:hover,
-.card-15:hover,
-.card-16:hover,
-.card-17:hover {
-  transform: scale(1.02); /* Scale size for hover effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ease */
-}
-
-/* Media Queries Small Tablet */
+/* Media Queries*/
 @media screen and (max-width: 600px) {
   body {
     min-height: 100vh;
@@ -156,13 +109,11 @@ footer {
   }
 }
 
-/* Media Queries Mobile */
 @media screen and (max-width: 390px) {
   .navbar-logo {
     display: none;
   }
 
-  /* Header Width */
   header {
     width: 100%;
     height: auto;
@@ -174,7 +125,7 @@ footer {
     max-width: 1600px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Placing links on each side */
+    justify-content: space-between;
   }
 
   .navbar-links {
@@ -192,23 +143,70 @@ footer {
     margin: 0;
     align-self: flex-end;
   }
+}
 
-  /*Footer*/
-  footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+@media screen and (max-width: 425px) {
+  header {
+    height: 160px;
   }
 
-  .footer-container {
-    height: 200px;
+  .navbar-container {
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
   }
 
+  .navbar-logo {
+    max-width: 300px;
+    height: 100px;
+  }
+
+  .navbar-links {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .navbar-container {
+    width: 100%;
+    height: 500px;
+  }
+
+  .navbar-container a {
+    height: 100%;
+    width: 150px;
+  }
+
+  .navbar-logo {
+    display: block;
+    max-width: 100px;
+    height: auto;
+  }
+
+  footer {
+    width: 100%;
+    height: 150px;
+  }
+
+  .footer-container {
+    height: 100%;
+    max-width: 390px;
+  }
+
   .footer-logo {
-    max-width: 80px;
+    max-width: 100px;
+  }
+
+  .footer-links li {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-container {
+    height: 120px;
   }
 }
